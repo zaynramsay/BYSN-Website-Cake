@@ -1,0 +1,1 @@
+{"api":"cake.bysnapps.com","version":"v1","endpoints":[{"path":"/api/v1/privacy/effective-date.json","description":"Privacy policy effective date and last updated timestamp"},{"path":"/api/v1/privacy/meta.json","description":"Privacy policy metadata including section index"}]}

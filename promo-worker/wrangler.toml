@@ -1,0 +1,13 @@
+name = "cake-promo"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "cake-promo"
+database_id = "eb7ff253-a598-457b-8b0e-e9be1ff1116d"
+
+[vars]
+ALLOWED_ORIGIN = "https://cake.bysnapps.com"
+# TURNSTILE_SECRET = "" # Set via: wrangler secret put TURNSTILE_SECRET

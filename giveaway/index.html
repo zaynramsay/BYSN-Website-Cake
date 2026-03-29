@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://cake.bysnapps.com/giveaway">
+  <title>Free Cake Topper Bundle – Cake Birthday Reminders</title>
+  <meta name="title" content="Free Cake Topper Bundle – Cake Birthday Reminders">
+  <meta name="description" content="Claim a free Cake Topper Bundle — custom color schemes, app icons, and confetti effects for Cake. Limited codes available!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cake.bysnapps.com/giveaway">
+  <meta property="og:title" content="Free Cake Topper Bundle – Cake Birthday Reminders">
+  <meta property="og:description" content="Claim a free Cake Topper Bundle — custom color schemes, app icons, and confetti effects for Cake. Limited codes available!">
+  <meta property="og:image" content="https://cake.bysnapps.com/assets/cakeLogo.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://cake.bysnapps.com/giveaway">
+  <meta property="twitter:title" content="Free Cake Topper Bundle – Cake Birthday Reminders">
+  <meta property="twitter:description" content="Claim a free Cake Topper Bundle — custom color schemes, app icons, and confetti effects for Cake. Limited codes available!">
+  <meta property="twitter:image" content="https://cake.bysnapps.com/assets/cakeLogo.png">
+  <link rel="icon" type="image/png" href="/assets/cakeLogo.png">
+  <link rel="apple-touch-icon" href="/assets/cakeLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-primary: #0a0a0a;
+      --bg-card: rgba(255, 255, 255, 0.05);
+      --bg-card-hover: rgba(255, 255, 255, 0.08);
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-hover: rgba(255, 255, 255, 0.22);
+      --text-primary: #f7f8fb;
+      --text-secondary: rgba(255, 255, 255, 0.72);
+      --text-tertiary: rgba(255, 255, 255, 0.4);
+      --accent: #fc3d4f;
+      --accent-soft: #ff6b7d;
+      --accent-glow: rgba(252, 61, 79, 0.35);
+      --accent-glow-soft: rgba(252, 61, 79, 0.12);
+      --success: #4ADE80;
+      --success-glow: rgba(74, 222, 128, 0.25);
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 22px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Aurora background ── */
+    .aurora {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .aurora::before,
+    .aurora::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.6;
+      animation: auroraShift 12s ease-in-out infinite alternate;
+    }
+    .aurora::before {
+      width: 600px;
+      height: 600px;
+      top: -15%;
+      left: 20%;
+      background: radial-gradient(circle, rgba(252, 61, 79, 0.22), transparent 70%);
+    }
+    .aurora::after {
+      width: 500px;
+      height: 500px;
+      bottom: -10%;
+      right: 15%;
+      background: radial-gradient(circle, rgba(255, 107, 125, 0.15), transparent 70%);
+      animation-delay: -6s;
+      animation-duration: 14s;
+    }
+    @keyframes auroraShift {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(30px, -20px) scale(1.08); }
+    }
+
+    /* ── Noise texture overlay ── */
+    .noise {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+    }
+
+    /* ── Nav ── */
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(24px) saturate(1.5);
+      -webkit-backdrop-filter: blur(24px) saturate(1.5);
+      background: rgba(10, 10, 10, 0.65);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 3vw, 2.5rem);
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+    .brand img { border-radius: 10px; }
+    .nav-links { display: flex; gap: 8px; }
+    .nav-link {
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+    .nav-link:hover { color: var(--text-primary); background: rgba(255,255,255,0.06); }
+    .nav-download {
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    .nav-download:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    /* ── Main content ── */
+    main {
+      position: relative;
+      z-index: 2;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 3vw, 2.5rem);
+    }
+
+    .promo-card {
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+    }
+
+    /* ── Logo ── */
+    .logo-wrap {
+      margin-bottom: 36px;
+      display: flex;
+      justify-content: center;
+    }
+    .logo-wrap img {
+      width: 96px;
+      height: 96px;
+      border-radius: var(--radius-lg);
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 12px 48px rgba(0, 0, 0, 0.5),
+        0 0 80px var(--accent-glow-soft);
+      animation: logoFloat 6s ease-in-out infinite;
+    }
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* ── Headings ── */
+    .promo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--accent-glow-soft);
+      border: 1px solid rgba(252, 61, 79, 0.2);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-soft);
+      margin-bottom: 20px;
+    }
+    .promo-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    .promo-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .promo-subtitle {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 32px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── Bundle info card ── */
+    .bundle-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.25rem, 3vw, 1.75rem);
+      margin-bottom: 32px;
+      text-align: left;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .bundle-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+    .bundle-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .bundle-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-soft);
+    }
+    .bundle-price {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      text-decoration: line-through;
+    }
+    .bundle-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .bundle-features li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+    .feature-check {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(74, 222, 128, 0.1);
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .feature-check svg {
+      width: 12px;
+      height: 12px;
+    }
+    .bundle-note {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.78rem;
+      color: var(--text-tertiary);
+      line-height: 1.55;
+    }
+
+    /* ── Codes remaining ── */
+    .codes-remaining {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      letter-spacing: 0.01em;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .remaining-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 10px var(--success-glow);
+      flex-shrink: 0;
+    }
+    .codes-remaining.low .remaining-dot {
+      background: #FBBF24;
+      box-shadow: 0 0 10px rgba(251, 191, 36, 0.35);
+    }
+    .codes-remaining.critical .remaining-dot {
+      background: #F87171;
+      box-shadow: 0 0 10px rgba(248, 113, 113, 0.35);
+      animation: pulse-dot 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    /* ── Claim button ── */
+    .claim-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 44px;
+      border-radius: var(--radius-md);
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      background: linear-gradient(135deg, var(--accent) 0%, #ff6b7d 100%);
+      color: white;
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+        0 6px 32px var(--accent-glow),
+        0 2px 4px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+      letter-spacing: -0.01em;
+      position: relative;
+      overflow: hidden;
+    }
+    .claim-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .claim-btn:hover:not(:disabled) {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.12) inset,
+        0 12px 48px var(--accent-glow),
+        0 4px 8px rgba(0,0,0,0.4);
+    }
+    .claim-btn:active:not(:disabled) {
+      transform: translateY(0) scale(0.98);
+    }
+    .claim-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    /* ── Turnstile ── */
+    .turnstile-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+      min-height: 0;
+      transition: min-height 0.3s;
+    }
+
+    /* ── Spinner ── */
+    .spinner {
+      width: 22px;
+      height: 22px;
+      border: 2.5px solid rgba(255,255,255,0.2);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── State panels ── */
+    .state-panel {
+      display: none;
+    }
+    .state-panel.active {
+      display: block;
+      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Success state ── */
+    .success-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(52, 211, 153, 0.1));
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+    .success-icon svg {
+      width: 32px;
+      height: 32px;
+      color: var(--success);
+    }
+
+    .success-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.35rem, 4vw, 1.65rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .success-body {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .redeem-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 40px;
+      border-radius: var(--radius-md);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--success) 0%, #34D399 100%);
+      color: #0a2215;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.08) inset,
+        0 6px 32px var(--success-glow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      letter-spacing: -0.01em;
+      position: relative;
+      overflow: hidden;
+    }
+    .redeem-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .redeem-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.12) inset,
+        0 12px 48px var(--success-glow);
+    }
+
+    .device-note {
+      margin-top: 16px;
+      font-size: 0.8rem;
+      color: var(--text-tertiary);
+    }
+
+    /* ── Exhausted state ── */
+    .state-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 32px;
+      line-height: 1;
+    }
+    .state-icon.exhausted-icon {
+      background: linear-gradient(135deg, rgba(252, 61, 79, 0.12), rgba(255, 107, 125, 0.08));
+      border: 1px solid rgba(252, 61, 79, 0.18);
+    }
+    .state-icon.device-icon {
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.12), rgba(59, 130, 246, 0.08));
+      border: 1px solid rgba(96, 165, 250, 0.18);
+    }
+    .state-icon.error-icon {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.12), rgba(245, 158, 11, 0.08));
+      border: 1px solid rgba(251, 191, 36, 0.18);
+    }
+
+    .state-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.35rem, 4vw, 1.65rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .state-body {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .store-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: var(--radius-md);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .store-link:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ── Error state ── */
+    .retry-btn {
+      display: inline-flex;
+      padding: 12px 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .retry-btn:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ── Confetti ── */
+    .confetti-container {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1000;
+      overflow: hidden;
+    }
+    .confetti-piece {
+      position: absolute;
+      top: 50%;
+      border-radius: 2px;
+      animation: confetti-burst 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+    @keyframes confetti-burst {
+      0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.2);
+        opacity: 0;
+      }
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 2;
+      padding: 48px clamp(1.25rem, 3vw, 2.5rem);
+      text-align: center;
+      border-top: 1px solid var(--border-subtle);
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      transition: color 0.2s ease;
+    }
+    .footer-links a:hover { color: var(--text-secondary); }
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--text-tertiary);
+    }
+
+    /* ── Entrance animations ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: revealUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .reveal-d1 { animation-delay: 0.08s; }
+    .reveal-d2 { animation-delay: 0.16s; }
+    .reveal-d3 { animation-delay: 0.24s; }
+    .reveal-d4 { animation-delay: 0.32s; }
+    .reveal-d5 { animation-delay: 0.4s; }
+    @keyframes revealUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Loading skeleton ── */
+    .loading-placeholder {
+      height: 54px;
+      border-radius: var(--radius-md);
+      background: var(--bg-card);
+      animation: shimmer 1.8s ease-in-out infinite;
+    }
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.7; }
+    }
+
+    /* ── Noscript ── */
+    .noscript-msg {
+      padding: 20px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .claim-btn, .redeem-btn { width: 100%; }
+      .nav-links { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <div class="nav">
+      <a href="/" class="brand">
+        <img src="/assets/cakeLogo.png" alt="Cake" width="36" height="36">
+        <span>Cake</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#features" class="nav-link">Features</a>
+        <a href="/#download" class="nav-link">Download</a>
+      </nav>
+      <a href="https://apps.apple.com/us/app/cake-birthday-reminders/id6743376594"
+         target="_blank" rel="noopener noreferrer" class="nav-download">
+        App Store
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="promo-card">
+      <div class="logo-wrap reveal">
+        <img src="/assets/cakeLogo.png" alt="Cake app icon" width="96" height="96">
+      </div>
+
+      <!-- CLAIM state (default) -->
+      <div id="state-claim" class="state-panel active">
+        <div class="promo-badge reveal reveal-d1">
+          <span class="promo-badge-dot"></span>
+          Limited Time Giveaway
+        </div>
+        <h1 class="promo-title reveal reveal-d2">Free Cake Topper Bundle</h1>
+        <p class="promo-subtitle reveal reveal-d3">
+          Claim a free Cake Topper Bundle code. Limited supply — one per person while they last.
+        </p>
+        <div class="bundle-card reveal reveal-d4">
+          <div class="bundle-header">
+            <p class="bundle-name">Cake Topper Bundle</p>
+            <span class="bundle-price">$2.99</span>
+          </div>
+          <ul class="bundle-features">
+            <li>
+              <span class="feature-check">
+                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 6.5L5 9L9.5 3" stroke="#4ADE80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              Custom color schemes
+            </li>
+            <li>
+              <span class="feature-check">
+                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 6.5L5 9L9.5 3" stroke="#4ADE80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              Alternate app icons
+            </li>
+            <li>
+              <span class="feature-check">
+                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 6.5L5 9L9.5 3" stroke="#4ADE80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              In-app confetti effects
+            </li>
+          </ul>
+          <p class="bundle-note">
+            Does not include watermark removal for Card Generator. That's available separately in-app.
+          </p>
+        </div>
+        <div class="reveal reveal-d5">
+          <div id="codes-remaining" class="codes-remaining" style="display:none;">
+            <span id="codes-remaining-dot" class="remaining-dot"></span>
+            <span id="codes-remaining-text"></span>
+          </div>
+          <div id="turnstile-wrap" class="turnstile-wrap"></div>
+          <button id="claim-btn" class="claim-btn" disabled>
+            <span id="claim-btn-text">Loading...</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- LOADING state -->
+      <div id="state-loading" class="state-panel">
+        <h1 class="promo-title">Free Cake Topper Bundle</h1>
+        <p class="promo-subtitle">Grabbing your code...</p>
+        <div style="display:flex;justify-content:center;padding:24px 0;">
+          <div class="spinner"></div>
+        </div>
+      </div>
+
+      <!-- SUCCESS state -->
+      <div id="state-success" class="state-panel">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2 class="success-title">Your Cake Topper Bundle is ready!</h2>
+        <p class="success-body">
+          Tap the button below to redeem in the App Store.
+          This code can only be used once and unlocks custom color schemes, app icons, and confetti.
+        </p>
+        <a id="redeem-link" href="#" target="_blank" rel="noopener noreferrer" class="redeem-btn">
+          Redeem on App Store &rarr;
+        </a>
+        <p class="device-note">Open this link on your iPhone or iPad to redeem.</p>
+      </div>
+
+      <!-- EXHAUSTED state -->
+      <div id="state-exhausted" class="state-panel">
+        <div class="state-icon exhausted-icon">&#127856;</div>
+        <h2 class="state-title">Everyone's had all the Cake!</h2>
+        <p class="state-body">
+          It looks like all the promo codes have been claimed. Check back later to see if more become available!
+        </p>
+        <a href="https://apps.apple.com/us/app/cake-birthday-reminders/id6743376594"
+           target="_blank" rel="noopener noreferrer" class="store-link">
+          View on App Store &rarr;
+        </a>
+      </div>
+
+      <!-- WRONG DEVICE state -->
+      <div id="state-device" class="state-panel">
+        <div class="state-icon device-icon">&#128187;</div>
+        <h2 class="state-title">Apple device required</h2>
+        <p class="state-body">
+          Promo codes can only be redeemed on an iPhone, iPad, or Mac.
+          Visit this page on your Apple device to claim a code.
+        </p>
+        <a href="https://apps.apple.com/us/app/cake-birthday-reminders/id6743376594"
+           target="_blank" rel="noopener noreferrer" class="store-link">
+          View on App Store &rarr;
+        </a>
+      </div>
+
+      <!-- ERROR state -->
+      <div id="state-error" class="state-panel">
+        <div class="state-icon error-icon">&#9888;&#65039;</div>
+        <h2 class="state-title">Something went wrong</h2>
+        <p class="state-body" id="error-message">
+          We couldn't process your request. Please try again.
+        </p>
+        <button class="retry-btn" onclick="location.reload()">Try Again</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="mailto:support@bysnapps.com">Support</a>
+      <a href="https://apps.apple.com/us/app/cake-birthday-reminders/id6743376594">App Store</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 BYSN Apps. Made with care for celebrating life's special moments.</p>
+  </footer>
+
+  <noscript>
+    <div class="noscript-msg">
+      <p>JavaScript is required to claim a promo code. Please enable JavaScript and reload the page.</p>
+    </div>
+  </noscript>
+
+  <script>
+    // ═══════════════════════════════════════════════════════════
+    // CONFIGURATION — Update these values before deploying
+    // ═══════════════════════════════════════════════════════════
+    const CONFIG = {
+      WORKER_URL: 'https://cake-promo.4w925v6gvz.workers.dev',
+      TURNSTILE_SITE_KEY: '', // Optional: Cloudflare Turnstile site key (leave empty to skip CAPTCHA)
+    };
+    // ═══════════════════════════════════════════════════════════
+
+    let turnstileToken = null;
+    let codesRemaining = null;
+
+    // ── Apple device detection ──
+    function isAppleDevice() {
+      const ua = navigator.userAgent || '';
+      const platform = navigator.platform || '';
+      if (/iPhone|iPad|iPod/.test(ua)) return true;
+      if (/Macintosh|Mac OS/.test(ua)) return true;
+      if (/Mac|iPhone|iPad|iPod/.test(platform)) return true;
+      if (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) return true;
+      return false;
+    }
+
+    // ── State management ──
+    function showState(stateId) {
+      document.querySelectorAll('.state-panel').forEach(el => el.classList.remove('active'));
+      const target = document.getElementById('state-' + stateId);
+      if (target) target.classList.add('active');
+    }
+
+    // ── Confetti effect ──
+    function showConfetti() {
+      const container = document.createElement('div');
+      container.className = 'confetti-container';
+      document.body.appendChild(container);
+
+      const colors = ['#fc3d4f', '#ff6b7d', '#4ADE80', '#60A5FA', '#FBBF24', '#A78BFA', '#F472B6'];
+      const shapes = [
+        [8, 8],   // square
+        [6, 10],  // rectangle
+        [10, 6],  // wide rectangle
+      ];
+      for (let i = 0; i < 60; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        const [w, h] = shapes[Math.floor(Math.random() * shapes.length)];
+        piece.style.width = w + 'px';
+        piece.style.height = h + 'px';
+        piece.style.left = (35 + Math.random() * 30) + '%';
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.setProperty('--tx', (Math.random() - 0.5) * 700 + 'px');
+        piece.style.setProperty('--ty', -(250 + Math.random() * 450) + 'px');
+        piece.style.setProperty('--rot', (Math.random() * 1080 - 540) + 'deg');
+        piece.style.animationDelay = (Math.random() * 0.4) + 's';
+        if (Math.random() > 0.5) piece.style.borderRadius = '50%';
+        container.appendChild(piece);
+      }
+
+      setTimeout(() => container.remove(), 3500);
+    }
+
+    // ── Turnstile setup ──
+    function initTurnstile() {
+      if (!CONFIG.TURNSTILE_SITE_KEY) {
+        enableClaimButton();
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad';
+      script.async = true;
+      document.head.appendChild(script);
+    }
+
+    window.onTurnstileLoad = function () {
+      turnstile.render('#turnstile-wrap', {
+        sitekey: CONFIG.TURNSTILE_SITE_KEY,
+        appearance: 'interaction-only',
+        callback: function (token) {
+          turnstileToken = token;
+          enableClaimButton();
+        },
+        'expired-callback': function () {
+          turnstileToken = null;
+          disableClaimButton('Verification expired — refreshing...');
+          turnstile.reset('#turnstile-wrap');
+        },
+        'error-callback': function () {
+          enableClaimButton();
+        },
+      });
+    };
+
+    function enableClaimButton() {
+      const btn = document.getElementById('claim-btn');
+      const text = document.getElementById('claim-btn-text');
+      btn.disabled = false;
+      text.textContent = 'Claim Your Free Code';
+    }
+
+    function disableClaimButton(msg) {
+      const btn = document.getElementById('claim-btn');
+      const text = document.getElementById('claim-btn-text');
+      btn.disabled = true;
+      text.textContent = msg || 'Loading...';
+    }
+
+    // ── Claim logic ──
+    async function claimCode() {
+      showState('loading');
+
+      try {
+        const body = {};
+        if (CONFIG.TURNSTILE_SITE_KEY && turnstileToken) {
+          body.token = turnstileToken;
+        }
+
+        const res = await fetch(CONFIG.WORKER_URL + '/claim', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+
+        const data = await res.json();
+
+        if (data.exhausted) {
+          showState('exhausted');
+          return;
+        }
+
+        if (data.error) {
+          if (data.error === 'apple_device_required') {
+            showState('device');
+            return;
+          }
+          let msg = 'Something went wrong. Please try again.';
+          if (data.error === 'verification_failed') {
+            msg = 'Verification failed. Please reload and try again.';
+          } else if (data.error === 'verification_required') {
+            msg = 'Please complete the verification before claiming.';
+          }
+          document.getElementById('error-message').textContent = msg;
+          showState('error');
+          return;
+        }
+
+        if (data.url) {
+          document.getElementById('redeem-link').href = data.url;
+          showState('success');
+          showConfetti();
+          return;
+        }
+
+        throw new Error('Unexpected response');
+      } catch (err) {
+        console.error('Claim error:', err);
+        document.getElementById('error-message').textContent =
+          'Could not connect to the server. Please check your connection and try again.';
+        showState('error');
+      }
+    }
+
+    // ── Update remaining count display ──
+    function updateRemainingDisplay(count) {
+      const wrap = document.getElementById('codes-remaining');
+      const text = document.getElementById('codes-remaining-text');
+      if (!wrap || !text || count == null) return;
+
+      wrap.style.display = 'inline-flex';
+      text.textContent = count === 1
+        ? '1 code remaining'
+        : count + ' codes remaining';
+
+      wrap.classList.remove('low', 'critical');
+      if (count <= 5) wrap.classList.add('critical');
+      else if (count <= 25) wrap.classList.add('low');
+    }
+
+    // ── Check status on load ──
+    async function checkStatus() {
+      try {
+        const res = await fetch(CONFIG.WORKER_URL + '/status');
+        const data = await res.json();
+        codesRemaining = data.remaining;
+
+        updateRemainingDisplay(data.remaining);
+
+        if (data.remaining === 0) {
+          showState('exhausted');
+          return false;
+        }
+        return true;
+      } catch {
+        return true;
+      }
+    }
+
+    // ── Init ──
+    async function init() {
+      if (!isAppleDevice()) {
+        showState('device');
+        return;
+      }
+
+      const claimBtn = document.getElementById('claim-btn');
+      claimBtn.addEventListener('click', claimCode);
+
+      const available = await checkStatus();
+      if (available) {
+        initTurnstile();
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
